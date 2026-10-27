@@ -1,43 +1,60 @@
-# 🎭 KİŞİLİK TESTİ | C# WinForms Projesi
+# 🎭 Şiir Öneren Kişilik Testi (C# Windows Forms)
 
-## 📌 Projenin Amacı
+> 20 soruluk kişilik testini grafik arayüzle sunan, sonuca göre kullanıcıya kişiliğine uygun bir şiir öneren masaüstü uygulaması.
+>
+> *A C# Windows Forms desktop app that runs a 20-question personality test and recommends a poem matching the result.*
 
-Bu projenin temel amacı, kodlama ile sanatı birleştirmek ve yazılımın sadece teknik değil, aynı zamanda duygusal ve sanatsal bir boyutu da olduğunu göstermektir. 
-Kullanıcılar 20 sorudan oluşan bu testte kendilerini analiz ederken, testin sonunda kişiliklerine özel bir şiir önerisi ile karşılaşırlar.  
+![Dil](https://img.shields.io/badge/Dil-C%23-239120?logo=csharp&logoColor=white)
+![Arayüz](https://img.shields.io/badge/Aray%C3%BCz-Windows%20Forms-0078D6?logo=windows&logoColor=white)
+![IDE](https://img.shields.io/badge/IDE-Visual%20Studio-5C2D91?logo=visualstudio&logoColor=white)
 
-Şiir, ilk bakışta yazılımdan uzak gibi görünse de bu proje, şiirin bilişim alanında da yer bulabileceğini göstermektedir.
+## 📌 Proje Hakkında
 
-## 🧠 Proje Hakkında
+Bu projenin amacı kodlama ile sanatı birleştirmek ve yazılımın yalnızca teknik değil, duygusal ve sanatsal bir boyutu da olabileceğini göstermektir. Kullanıcı 20 sorudan oluşan testi tamamlar; toplam puana göre kişilik analizi yapılır ve sonuç ekranında kişiliğine uygun bir şiir sunulur.
 
-- Kullanıcı, giriş ekranından adını girerek teste başlar.
-- 20 soruluk testte verilen her cevaba göre bir puan hesaplanır.
-- Elde edilen puan, belirli aralıklara göre değerlendirilerek kullanıcıya kişilik analizi sunulur.
-- Analiz sonucunda, kişilik tipine uygun şiir kullanıcıya özel olarak gösterilir.
-- Kullanıcının ismi ve kişilik puanı kayıt altına alınır, geçmiş kayıtlar ayrı bir ekranda görüntülenebilir.
+Proje, aynı testin C dilindeki konsol sürümünün butonlar, formlar ve metin kutularıyla yeniden tasarlanmış grafik arayüzlü hâlidir.
 
-## ✍️ Sorular ve Cevaplar Hakkında
+## ✨ Özellikler
 
-Bu projedeki sorular, cevap seçenekleri ve puanlama sistemi tamamen tarafımdan oluşturulmuştur.  
-Cevaplara karşılık gelen puanlar, *astgele değil, çeşitli kişilik tiplerinin analiz edilmesiyle belirlenmiştir.  
-Yani her puan aralığı bir kişilik tipini temsil eder ve verilen cevaplara göre anlamlı bir analiz yapılır.
+- Giriş ekranında ad alınarak kişiselleştirilmiş test akışı
+- 20 soruluk test ve her cevap için ayrı puanlama
+- Puan aralığına göre kişilik analizi ve kişiliğe özel şiir önerisi
+- Kullanıcı adı ve puanının kaydedilmesi, geçmiş kayıtların ayrı ekranda listelenmesi
 
-## 👩‍💻 Kullanılan Teknolojiler
+Sorular, cevap seçenekleri ve puanlama sistemi tamamen tarafımdan hazırlanmıştır; puanlar rastgele değil, farklı kişilik tiplerinin özellikleri incelenerek belirlenmiştir.
 
-- Geliştirme Ortamı: Visual Studio
-- Dil: C#
-- Arayüz: Windows Forms
-- Veri Saklama: Dizi temelli geçici kayıt yapısı
-- Konsol projesinden farklı olarak, renkli arayüz, butonlar, formlar ve metin kutuları ile modernleştirilmiş bir kullanıcı deneyimi sunar.
+## 🧾 Ekranlar (Formlar)
 
-## 🧾 Formlar
+| Form | Açıklama |
+| --- | --- |
+| `Form1` | Giriş ekranı — ad girişi ve yönlendirme |
+| `Form4` | Soruların gösterildiği test ekranı |
+| `Form9` | Kişilik analizi ve önerilen şiirin gösterildiği sonuç ekranı |
+| Diğer formlar | Geçmiş kayıtlar ve yardımcı ekranlar |
 
-- `Form1`: Giriş ekranı (isim girişi ve yönlendirme)
-- `Form4`: Soruların gösterildiği test ekranı
-- `Form9`: Sonuçların ve önerilen şiirin gösterildiği analiz ekranı
-- Diğer destekleyici formlar ile birlikte geçmiş kayıtları da görüntüleyebilirsin
+## 🛠️ Kullanılan Teknolojiler
+
+| Alan | Teknoloji |
+| --- | --- |
+| Dil | C# |
+| Arayüz | Windows Forms (.NET Framework) |
+| Geliştirme ortamı | Visual Studio |
+| Veri saklama | Dizi tabanlı, oturum içi kayıt yapısı |
+
+## 🚀 Çalıştırma
+
+1. Depoyu klonlayın.
+2. Çözüm (`.sln`) dosyasını Visual Studio ile açın.
+3. **F5** ile derleyip çalıştırın.
 
 ## 💡 Neden Şiir?
 
-Projeye şiir dahil etmemin amacı, yazılımı sadece veriler ve algoritmalarla sınırlı görmek yerine, insan ruhuna hitap eden bir araç olarak da kullanılabileceğini göstermekti.  
-Her bir kişilik analizine uygun şiirler seçilerek, testin sonunda kullanıcıya duygu dolu bir kapanış yapılması hedeflenmiştir.
+Şiir ilk bakışta yazılımdan uzak bir kavram gibi görünse de bu proje, yazılımın insan ruhuna hitap eden bir araç olarak da kullanılabileceğini göstermeyi amaçlar. Her kişilik analizine uygun şiirler seçilerek test duygu dolu bir kapanışla sona erer.
 
+## 🔗 İlgili Proje
+
+Aynı testin konsol sürümü: **C ile Şiir Öneren Kişilik Testi**
+
+## 👩‍💻 Geliştirici
+
+**Zeynep Erdem** — [github.com/zeyerdm](https://github.com/zeyerdm)
